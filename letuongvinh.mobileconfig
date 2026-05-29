@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://apple.dns.nextdns.io/cd8d13</string>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>⚡ Cấu hình mã hóa DNS bảo mật cao giúp tối ưu hóa hệ thống mạng và mở khóa Premium.</string>
+			<key>PayloadDisplayName</key>
+			<string>✨ NextDNS Locket Gold (cd8d13) 👑</string>
+			<key>PayloadIdentifier</key>
+			<string>io.nextdns.cd8d13.profile.dnsSettings.managed</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.cd8d13.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>🚀 Hồ sơ cấu hình NextDNS mã hóa thông minh, hỗ trợ bẻ khóa tính năng Locket Gold siêu mượt.</string>
+	<key>PayloadDisplayName</key>
+	<string>✨ NextDNS Locket Gold (cd8d13) 👑</string>
+	<key>PayloadIdentifier</key>
+	<string>io.nextdns.cd8d13.profile</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.cd8d13</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
