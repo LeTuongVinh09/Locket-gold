@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="vi" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locket Gold - Unlock Premium Experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkBg: "#050505",
+              darkCard: "#0d0d0d",
+              goldPrimary: "#F5B300",
+              goldGlow: "#FFD95A",
+              textSec: "#B0B0B0",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+
+      /* Hiệu ứng đổ bóng chữ vàng Luxury */
+      .gold-glow-text {
+        text-shadow: 0 0 20px rgba(245, 179, 0, 0.5);
+      }
+
+      /* Hiệu ứng viền phát sáng nhẹ giống ảnh mẫu */
+      .gold-border-glow {
+        box-shadow: 0 0 25px rgba(245, 179, 0, 0.05);
+      }
+
+      /* Tái tạo nút MXH phát sáng nguyên khối đỉnh cao theo ảnh mẫu image_e3511b.jpg */
+      .premium-social-card {
+        background: linear-gradient(
+          135deg,
+          rgba(25, 25, 25, 0.8) 0%,
+          rgba(10, 10, 10, 0.9) 100%
+        );
+        border: 1.5px solid rgba(245, 179, 0, 0.35);
+        box-shadow: 0 0 15px rgba(245, 179, 0, 0.2);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .premium-social-card:hover {
+        border-color: #ffd95a;
+        box-shadow: 0 0 25px rgba(245, 179, 0, 0.6);
+        transform: translateY(-4px);
+      }
+
+      /* Hiệu ứng quét sáng (Shine) trên các nút Primary */
+      .btn-shine-effect {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-shine-effect::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -60%;
+        width: 30%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(30deg);
+        transition: none;
+      }
+      .btn-shine-effect:hover::after {
+        left: 150%;
+        transition: all 0.8s ease-in-out;
+      }
+
+      /* Animation cho khối Khiên bảo mật bên phải */
+      @keyframes float-art {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-12px) rotate(2deg);
+        }
+      }
+      .animate-luxury-float {
+        animation: float-art 5s ease-in-out infinite;
+      }
+
+      @keyframes spin-slow-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-slow-ring {
+        animation: spin-slow-ring 25s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased">
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1440px] h-[700px] bg-[radial-gradient(circle_at_center,rgba(245,179,0,0.08)_0%,transparent_65%)] pointer-events-none -z-10"
+    ></div>
+
+    <header
+      class="sticky top-0 z-50 backdrop-blur-xl bg-darkBg/85 border-b border-white/5"
+    >
+      <div
+        class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-2.5">
+          <div
+            class="w-8 h-8 rounded-lg bg-gradient-to-br from-goldPrimary to-goldGlow flex items-center justify-center shadow-[0_0_12px_rgba(245,179,0,0.4)]"
+          >
+            <i class="fa-solid fa-shield-halved text-black text-sm"></i>
+          </div>
+          <span class="font-display font-bold text-lg tracking-wide text-white">
+            LOCKET <span class="text-goldPrimary gold-glow-text">GOLD</span>
+          </span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="#"
+            class="text-goldPrimary font-medium text-sm transition-colors"
+            >Trang chủ</a
+          >
+          <a
+            href="#process"
+            class="text-textSec hover:text-white font-medium text-sm transition-colors"
+            >Hướng dẫn</a
+          >
+          <a
+            href="#features"
+            class="text-textSec hover:text-white font-medium text-sm transition-colors"
+            >Tính năng</a
+          >
+          <a
+            href="#stats"
+            class="text-textSec hover:text-white font-medium text-sm transition-colors"
+            >FAQ</a
+          >
+          <a
+            href="#footer"
+            class="text-textSec hover:text-white font-medium text-sm transition-colors"
+            >Liên hệ</a
+          >
+        </nav>
+
+        <div class="hidden md:flex items-center">
+          <a
+            href="#process"
+            class="btn-shine-effect px-5 h-10 bg-gradient-to-r from-goldPrimary to-goldGlow text-black font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 shadow-[0_4px_15px_rgba(245,179,0,0.2)]"
+          >
+            <i class="fa-solid fa-bolt text-[10px]"></i> Kích hoạt ngay
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="w-full max-w-[1280px] mx-auto px-6 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center"
+    >
+      <div class="flex flex-col items-start text-left">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-goldPrimary/10 border border-goldPrimary/20 mb-6"
+        >
+          <span
+            class="w-1.5 h-1.5 rounded-full bg-goldPrimary animate-pulse"
+          ></span>
+          <span
+            class="font-display font-semibold text-[10px] tracking-widest text-goldGlow uppercase"
+            >Galaxy Premium Experience</span
+          >
+        </div>
+        <h1
+          class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.15] mb-5 tracking-tight"
+        >
+          Unlock
+          <span
+            class="bg-gradient-to-r from-goldPrimary via-goldGlow to-white bg-clip-text text-transparent gold-glow-text"
+            >Gold<br />Experience</span
+          >
+        </h1>
+        <p
+          class="text-textSec text-sm sm:text-base max-w-md font-normal leading-relaxed mb-8"
+        >
+          Kích hoạt dịch vụ cao cấp, ổn định và nhanh chóng cho thiết bị của
+          bạn.
+        </p>
+        <div class="flex flex-row items-center gap-4 w-full sm:w-auto">
+          <a
+            href="#process"
+            class="btn-shine-effect h-12 px-6 bg-gradient-to-r from-goldPrimary to-goldGlow text-black font-bold text-sm rounded-xl flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(245,179,0,0.3)] transition-transform hover:scale-[1.02]"
+          >
+            <i class="fa-solid fa-bolt text-xs"></i> Kích hoạt ngay
+          </a>
+          <a
+            href="#process"
+            class="h-12 px-6 border border-goldPrimary/30 text-goldPrimary hover:bg-goldPrimary/10 font-semibold text-sm rounded-xl flex items-center justify-center gap-2 transition-all"
+          >
+            <i class="fa-regular fa-book-open text-xs"></i> Xem hướng dẫn
+          </a>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center relative min-h-[380px]">
+        <div
+          class="absolute w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border border-goldPrimary/10 rounded-full animate-spin-slow-ring"
+        ></div>
+        <div
+          class="absolute w-[360px] sm:w-[460px] h-[360px] sm:h-[460px] border border-dashed border-goldPrimary/5 rounded-full animate-spin-slow-ring"
+          style="animation-direction: reverse"
+        ></div>
+
+        <div
+          class="relative animate-luxury-float bg-gradient-to-b from-[#141414] to-[#060606] border border-goldPrimary/20 w-60 h-76 sm:w-68 sm:h-88 rounded-[32px] flex flex-col items-center justify-center p-6 gold-border-glow shadow-[inset_0_1px_20px_rgba(245,179,0,0.05)]"
+        >
+          <div
+            class="mb-2 text-goldPrimary drop-shadow-[0_0_15px_rgba(245,179,0,0.7)]"
+          >
+            <i class="fa-solid fa-crown text-4xl"></i>
+          </div>
+          <div
+            class="relative w-28 h-28 flex items-center justify-center bg-gradient-to-b from-goldPrimary/10 to-transparent rounded-full border border-goldPrimary/20 mb-4"
+          >
+            <i class="fa-solid fa-shield text-6xl text-goldPrimary/30"></i>
+            <div
+              class="absolute w-12 h-12 bg-gradient-to-br from-goldPrimary to-goldGlow text-black rounded-xl flex items-center justify-center shadow-lg"
+            >
+              <i class="fa-solid fa-lock text-lg"></i>
+            </div>
+          </div>
+          <p
+            class="font-display font-semibold text-white tracking-wide text-xs uppercase"
+          >
+            Secured Premium
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="features"
+      class="w-full max-w-[1280px] mx-auto px-6 py-24 border-t border-white/5"
+    >
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-darkCard border border-white/[0.06] rounded-[24px] p-8 flex flex-col justify-between group hover:border-goldPrimary/40 transition-all duration-300 hover:-translate-y-2 gold-border-glow"
+        >
+          <div>
+            <div
+              class="w-11 h-11 rounded-xl bg-goldPrimary/10 flex items-center justify-center mb-6 text-goldPrimary border border-goldPrimary/20"
+            >
+              <i class="fa-solid fa-shield-halved text-base"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">
+              Private DNS
+            </h3>
+            <p
+              class="text-goldPrimary text-xs font-medium uppercase tracking-wider mt-1 mb-6"
+            >
+              Kết nối ổn định
+            </p>
+            <ul class="space-y-4 mb-8 text-xs text-textSec">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Không hao pin
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Không nóng
+                máy
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Không cần VPN
+                liên tục
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Cấu hình
+                nhanh 1 chạm
+              </li>
+            </ul>
+          </div>
+          <a
+            href="data:application/x-apple-aspen-config;base64,MIIfLgYJKoZIhvcNAQcCoIIfHzCCHxsCAQExDzANBglghkgBZQMEAgEFADCCCjwGCSqGSIb3DQEHAaCCCi0EggopPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEuMCI+DQogIDxkaWN0Pg0KICAgIDxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+DQogICAgPHN0cmluZz5OZXh0RE5TIChjZDhkMTMpPC9zdHJpbmc+DQogICAgPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCiAgICA8c3RyaW5nPlRoaXMgcHJvZmlsZSBlbmFibGVzIE5leHRETlMgb24gYWxsIG5ldHdvcmtzIHVzaW5nIHRoZSBuYXRpdmUgRW5jcnlwdGVkIEROUyBmZWF0dXJlLjwvc3RyaW5nPg0KICAgIDxrZXk+UGF5bG9hZElkZW50aWZpZXI8L2tleT4NCiAgICA8c3RyaW5nPmlvLm5leHRkbnMuY2Q4ZDEzLnByb2ZpbGU8L3N0cmluZz4NCiAgICA8a2V5PlBheWxvYWRTY29wZTwva2V5Pg0KICAgIDxzdHJpbmc+U3lzdGVtPC9zdHJpbmc+DQogICAgPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICAgIDxzdHJpbmc+Q29uZmlndXJhdGlvbjwvc3RyaW5nPg0KICAgIDxrZXk+UGF5bG9hZFVVSUQ8L2tleT4NCiAgICA8c3RyaW5nPkExRTJGMjYyLURCNzMtNDBGNi1CRDIyLTJFNDJBNDNBM0M5NC5jZDhkMTM8L3N0cmluZz4NCiAgICA8a2V5PlBheWxvYWRWZXJzaW9uPC9rZXk+DQogICAgPGludGVnZXI+MTwvaW50ZWdlcj4NCiAgICA8a2V5PlBheWxvYWRDb250ZW50PC9rZXk+DQogICAgPGFycmF5Pg0KICAgICAgPGRpY3Q+DQogICAgICAgIDxrZXk+RE5TU2V0dGluZ3M8L2tleT4NCiAgICAgICAgPGRpY3Q+DQogICAgICAgICAgPGtleT5ETlNQcm90b2NvbDwva2V5Pg0KICAgICAgICAgIDxzdHJpbmc+SFRUUFM8L3N0cmluZz4NCiAgICAgICAgICA8a2V5PlNlcnZlclVSTDwva2V5Pg0KICAgICAgICAgIDxzdHJpbmc+aHR0cHM6Ly9hcHBsZS5kbnMubmV4dGRucy5pby9jZDhkMTM8L3N0cmluZz4NCiAgICAgICAgPC9kaWN0Pg0KICAgICAgICA8a2V5Pk9uRGVtYW5kUnVsZXM8L2tleT4NCiAgICAgICAgPGFycmF5Pg0KICAgICAgICAgIDxkaWN0Pg0KICAgICAgICAgICAgPGtleT5BY3Rpb248L2tleT4NCiAgICAgICAgICAgIDxzdHJpbmc+RXZhbHVhdGVDb25uZWN0aW9uPC9zdHJpbmc+DQogICAgICAgICAgICA8a2V5PkFjdGlvblBhcmFtZXRlcnM8L2tleT4NCiAgICAgICAgICAgIDxhcnJheT4NCiAgICAgICAgICAgICAgPGRpY3Q+DQogICAgICAgICAgICAgICAgPGtleT5Eb21haW5BY3Rpb248L2tleT4NCiAgICAgICAgICAgICAgICA8c3RyaW5nPk5ldmVyQ29ubmVjdDwvc3RyaW5nPg0KICAgICAgICAgICAgICAgIDxrZXk+RG9tYWluczwva2V5Pg0KICAgICAgICAgICAgICAgIDxhcnJheT4NCiAgICAgICAgICAgICAgICAgIDxzdHJpbmc+Y2FwdGl2ZS5hcHBsZS5jb208L3N0cmluZz4NCiAgICAgICAgICAgICAgICAgIDxzdHJpbmc+M2dwcG5ldHdvcmsub3JnPC9zdHJpbmc+DQogICAgICAgICAgICAgICAgICA8c3RyaW5nPmRhdi5vcmFuZ2UuZnI8L3N0cmluZz4NCiAgICAgICAgICAgICAgICAgIDxzdHJpbmc+dnZtLm1vYmlzdGFyLmJlPC9zdHJpbmc+DQogICAgICAgICAgICAgICAgICA8c3RyaW5nPnZ2bS5tc3RvcmUubXNnLnQtbW9iaWxlLmNvbTwvc3RyaW5nPg0KICAgICAgICAgICAgICAgICAgPHN0cmluZz50bWEudnZtLm1vbmUucGFuLW5l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"
+            download="letuongvinh.mobileconfig"
+            class="w-full h-11 rounded-xl bg-gradient-to-r from-goldPrimary to-goldGlow text-black font-bold text-xs flex items-center justify-center gap-1 shadow-md hover:scale-[1.01] transition-transform"
+          >
+            Cài đặt DNS <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <div
+          class="bg-darkCard border border-goldPrimary/40 rounded-[24px] p-8 flex flex-col justify-between group hover:-translate-y-2 gold-border-glow shadow-[0_0_25px_rgba(245,179,0,0.05)] transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-11 h-11 rounded-xl bg-goldPrimary flex items-center justify-center mb-6 text-black shadow-lg shadow-goldPrimary/20"
+            >
+              <i class="fa-solid fa-bolt text-base"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">
+              Shadowrocket
+            </h3>
+            <p
+              class="text-goldPrimary text-xs font-medium uppercase tracking-wider mt-1 mb-6"
+            >
+              Tăng tốc kết nối
+            </p>
+            <ul class="space-y-4 mb-8 text-xs text-textSec">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Module tối ưu
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Hiệu suất cao
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Độ ổn định
+                tuyệt đối
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Tương thích
+                nhiều thiết bị
+              </li>
+            </ul>
+          </div>
+
+          <button
+            id="copyBtn"
+            class="w-full h-11 rounded-xl bg-transparent border border-goldPrimary/40 text-goldPrimary font-bold text-xs flex items-center justify-center gap-1.5 hover:bg-goldPrimary hover:text-black transition-all active:scale-95"
+          >
+            <span id="btnText">Sao chép Module</span>
+            <i class="fa-regular fa-copy text-[11px]"></i>
+          </button>
+        </div>
+
+        <div
+          class="bg-darkCard border border-white/[0.06] rounded-[24px] p-8 flex flex-col justify-between group hover:border-goldPrimary/40 transition-all duration-300 hover:-translate-y-2 gold-border-glow"
+        >
+          <div>
+            <div
+              class="w-11 h-11 rounded-xl bg-goldPrimary/10 flex items-center justify-center mb-6 text-goldPrimary border border-goldPrimary/20"
+            >
+              <i class="fa-solid fa-crown text-base"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">
+              Premium Support
+            </h3>
+            <p
+              class="text-goldPrimary text-xs font-medium uppercase tracking-wider mt-1 mb-6"
+            >
+              Hỗ trợ VIP 24/7
+            </p>
+            <ul class="space-y-4 mb-8 text-xs text-textSec">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Hỗ trợ
+                Telegram / Zalo
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Hỗ trợ kỹ
+                thuật nhanh chóng
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Cập nhật liên
+                tục
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-goldPrimary"></i> Đồng hành lâu
+                dài
+              </li>
+            </ul>
+          </div>
+          <button
+            class="w-full h-11 rounded-xl bg-gradient-to-r from-goldPrimary to-goldGlow text-black font-bold text-xs flex items-center justify-center gap-1.5 shadow-md"
+          >
+            Liên hệ ngay <i class="fa-solid fa-headset text-[11px]"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="process"
+      class="w-full max-w-[1280px] mx-auto px-6 py-24 border-t border-white/5 text-center"
+    >
+      <h2
+        class="font-display font-bold text-xl text-goldPrimary tracking-[0.2em] uppercase mb-16"
+      >
+        Quy Trình Kích Hoạt
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 rounded-full bg-darkCard border border-goldPrimary/30 flex items-center justify-center text-goldPrimary mb-4 shadow-[0_0_15px_rgba(245,179,0,0.1)]"
+          >
+            <i class="fa-solid fa-download text-sm"></i>
+          </div>
+          <span class="text-[11px] font-mono text-goldPrimary">01</span>
+          <h4 class="font-display font-bold text-white text-sm mt-1">
+            Tải cấu hình
+          </h4>
+          <p
+            class="text-textSec text-[11px] mt-1 max-w-[180px] leading-relaxed"
+          >
+            Tải file cấu hình phù hợp cho thiết bị của bạn.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 rounded-full bg-darkCard border border-goldPrimary/30 flex items-center justify-center text-goldPrimary mb-4 shadow-[0_0_15px_rgba(245,179,0,0.1)]"
+          >
+            <i class="fa-solid fa-gear text-sm"></i>
+          </div>
+          <span class="text-[11px] font-mono text-goldPrimary">02</span>
+          <h4 class="font-display font-bold text-white text-sm mt-1">
+            Cho phép hồ sơ
+          </h4>
+          <p
+            class="text-textSec text-[11px] mt-1 max-w-[180px] leading-relaxed"
+          >
+            Vào cài đặt và cho phép cài đặt hồ sơ.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 rounded-full bg-darkCard border border-goldPrimary/30 flex items-center justify-center text-goldPrimary mb-4 shadow-[0_0_15px_rgba(245,179,0,0.1)]"
+          >
+            <i class="fa-solid fa-link text-sm"></i>
+          </div>
+          <span class="text-[11px] font-mono text-goldPrimary">03</span>
+          <h4 class="font-display font-bold text-white text-sm mt-1">
+            Vào cài đặt thiết bị
+          </h4>
+          <p
+            class="text-textSec text-[11px] mt-1 max-w-[180px] leading-relaxed"
+          >
+            Vào cài đặt mạng và chọn hồ sơ vừa cài đặt.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 rounded-full bg-gradient-to-br from-goldPrimary to-goldGlow flex items-center justify-center text-black mb-4 shadow-[0_0_15px_rgba(245,179,0,0.3)]"
+          >
+            <i class="fa-regular fa-circle-check text-base"></i>
+          </div>
+          <span class="text-[11px] font-mono text-goldPrimary">04</span>
+          <h4 class="font-display font-bold text-white text-sm mt-1">
+            Hoàn tất kích hoạt
+          </h4>
+          <p
+            class="text-textSec text-[11px] mt-1 max-w-[180px] leading-relaxed"
+          >
+            Kết nối thành công và tận hưởng dịch vụ Gold.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="stats"
+      class="w-full max-w-[1280px] mx-auto px-6 py-16 border-t border-white/5"
+    >
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-darkCard/40 border border-white/[0.04] p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-goldPrimary/30 transition-all"
+        >
+          <i class="fa-solid fa-chart-simple text-goldPrimary text-sm mb-2"></i>
+          <div
+            class="font-display font-extrabold text-2xl sm:text-3xl text-white group-hover:text-goldPrimary transition-colors"
+          >
+            98%
+          </div>
+          <div class="font-semibold text-[11px] text-white/90 mt-1">
+            Tỷ lệ ổn định
+          </div>
+          <div class="text-textSec text-[10px] mt-0.5">
+            Kết nối bền bỉ vững vững
+          </div>
+        </div>
+
+        <div
+          class="bg-darkCard/40 border border-white/[0.04] p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-goldPrimary/30 transition-all"
+        >
+          <i class="fa-regular fa-clock text-goldPrimary text-sm mb-2"></i>
+          <div
+            class="font-display font-extrabold text-2xl sm:text-3xl text-white group-hover:text-goldPrimary transition-colors"
+          >
+            1 Phút
+          </div>
+          <div class="font-semibold text-[11px] text-white/90 mt-1">
+            Thiết lập nhanh
+          </div>
+          <div class="text-textSec text-[10px] mt-0.5">
+            Dễ dàng - Nhanh chóng
+          </div>
+        </div>
+
+        <div
+          class="bg-darkCard/40 border border-white/[0.04] p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-goldPrimary/30 transition-all"
+        >
+          <i class="fa-solid fa-headset text-goldPrimary text-sm mb-2"></i>
+          <div
+            class="font-display font-extrabold text-2xl sm:text-3xl text-white group-hover:text-goldPrimary transition-colors"
+          >
+            24/7
+          </div>
+          <div class="font-semibold text-[11px] text-white/90 mt-1">
+            Hỗ trợ tận tâm
+          </div>
+          <div class="text-textSec text-[10px] mt-0.5">
+            Luôn sẵn sàng hỗ trợ
+          </div>
+        </div>
+
+        <div
+          class="bg-darkCard/40 border border-white/[0.04] p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-goldPrimary/30 transition-all"
+        >
+          <i class="fa-solid fa-users text-goldPrimary text-sm mb-2"></i>
+          <div
+            class="font-display font-extrabold text-2xl sm:text-3xl text-white group-hover:text-goldPrimary transition-colors"
+          >
+            1000+
+          </div>
+          <div class="font-semibold text-[11px] text-white/90 mt-1">
+            Người dùng tin tưởng
+          </div>
+          <div class="text-textSec text-[10px] mt-0.5">Đồng hành mỗi ngày</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full max-w-[1280px] mx-auto px-6 py-12">
+      <div
+        class="bg-gradient-to-r from-[#111] via-[#1a1a1a] to-[#0a0a0a] border border-goldPrimary/20 rounded-[24px] p-8 md:p-10 grid md:grid-cols-12 items-center gap-6 gold-border-glow"
+      >
+        <div
+          class="md:col-span-2 flex justify-center md:justify-start text-goldPrimary drop-shadow-[0_0_15px_rgba(245,179,0,0.4)]"
+        >
+          <i class="fa-solid fa-award text-5xl"></i>
+        </div>
+        <div class="md:col-span-6 text-center md:text-left">
+          <h3 class="font-display font-bold text-lg sm:text-xl text-white">
+            Trải nghiệm đẳng cấp — Khác biệt vượt trội
+          </h3>
+          <p class="text-textSec text-xs mt-1 mb-4">
+            Locket Gold mang đến cho bạn trải nghiệm internet mượt mà, bảo mật
+            và ổn định nhất.
+          </p>
+          <div
+            class="flex flex-wrap justify-center md:justify-start gap-3 text-[10px] text-textSec"
+          >
+            <span
+              class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/5"
+              ><i class="fa-solid fa-shield text-goldPrimary"></i> Bảo mật
+              cao</span
+            >
+            <span
+              class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/5"
+              ><i class="fa-solid fa-bolt text-goldPrimary"></i> Tốc độ vượt
+              trội</span
+            >
+            <span
+              class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/5"
+              ><i class="fa-solid fa-circle-check text-goldPrimary"></i> Ổn định
+              tuyệt đối</span
+            >
+          </div>
+        </div>
+        <div class="md:col-span-4 flex justify-center md:justify-end">
+          <a
+            href="#process"
+            class="btn-shine-effect px-6 h-12 bg-gradient-to-r from-goldPrimary to-goldGlow text-black font-bold text-xs rounded-xl flex items-center justify-center shadow-md"
+          >
+            Nâng cấp VIP ngay
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="bg-darkCard border-t border-white/5">
+      <div
+        class="max-w-[1280px] mx-auto px-6 pt-16 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8"
+      >
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-2 mb-4">
+            <div
+              class="w-7 h-7 rounded-lg bg-goldPrimary flex items-center justify-center text-black"
+            >
+              <i class="fa-solid fa-shield text-xs"></i>
+            </div>
+            <span class="font-display font-bold text-base text-white"
+              >LOCKET <span class="text-goldPrimary">GOLD</span></span
+            >
+          </div>
+          <p class="text-textSec text-xs leading-relaxed max-w-sm">
+            Locket Gold Premium Experience.
+          </p>
+        </div>
+
+        <div class="md:col-span-2">
+          <h5
+            class="text-white font-semibold text-xs uppercase tracking-wider mb-4"
+          >
+            Liên kết nhanh
+          </h5>
+          <div class="flex flex-col gap-2.5 text-xs text-textSec">
+            <a href="#" class="hover:text-goldPrimary">Trang chủ</a>
+            <a href="#process" class="hover:text-goldPrimary">Hướng dẫn</a>
+            <a href="#features" class="hover:text-goldPrimary">Tính năng</a>
+            <a href="#stats" class="hover:text-goldPrimary">FAQ</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+          <h5
+            class="text-white font-semibold text-xs uppercase tracking-wider mb-4"
+          >
+            Hỗ trợ
+          </h5>
+          <div class="flex flex-col gap-2.5 text-xs text-textSec">
+            <a href="#" class="hover:text-goldPrimary">Telegram</a>
+            <a href="#" class="hover:text-goldPrimary">Zalo</a>
+            <a href="#" class="hover:text-goldPrimary">Facebook</a>
+            <a href="#" class="hover:text-goldPrimary">Email</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 flex flex-col items-start">
+          <h5
+            class="text-white font-semibold text-xs uppercase tracking-wider mb-5"
+          >
+            Kết nối với chúng tôi
+          </h5>
+          <div class="flex items-center gap-4 mb-6">
+            <a
+              href="https://www.facebook.com/profile.php?id=61590286026215&mibextid=wwXIfr&rdid=tkiFt3NfZ6efF5Uu&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F17bDHejL7t%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr&_rdc=1&_rdr#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="premium-social-card w-12 h-12 rounded-[16px] flex items-center justify-center text-goldPrimary"
+              title="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </a>
+
+            <a
+              href="https://zalo.me/0346822534"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="premium-social-card w-12 h-12 rounded-[16px] flex items-center justify-center text-goldPrimary text-xs font-bold font-display"
+              title="Zalo"
+            >
+              Zalo
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@tuongvinh.zz?_r=1&_d=secCgYIASAHKAESPgo8ih46YIKvGuthea87u5BBDnwHKtKdLj2yNXpP5OMZUzHv2lZKmx3tXnwxh8X1W1e2%2B%2F%2BumZ3Wm2n3MBYdGgA%3D&_svg=1&checksum=2f65c35e2b164cb2940d72f284d2cfa36875a6eea356879c9a21ee12f6fdf9e9&item_author_type=1&reflow_sign_scene=7&rgssign=8.1.nh_SF7nD2V7ydlVGjjY3Rw&sec_uid=MS4wLjABAAAA8r1Rtz39B6rJeR6QA_8Ce9mjUeDqf1Uxmqqk-3yyMbi_UIOxNZRbh8p88qisuwfB&sec_user_id=MS4wLjABAAAA8r1Rtz39B6rJeR6QA_8Ce9mjUeDqf1Uxmqqk-3yyMbi_UIOxNZRbh8p88qisuwfB&share_app_id=1180&share_author_id=7340901144992302088&share_link_id=D99FB5A2-5E4F-4596-9673-C3E8ABFC6289&share_region=VN&share_scene=1&sharer_language=vi&social_share_type=4&source=h5_t&timestamp=1780057925&tt_from=copy&u_code=ecmamb57b2bij4&ug_btm=b8727%2Cb0&user_id=7340901144992302088&utm_campaign=client_share&utm_medium=ios&utm_source=copy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="premium-social-card w-12 h-12 rounded-[16px] flex items-center justify-center text-goldPrimary"
+              title="TikTok"
+            >
+              <i class="fa-brands fa-tiktok text-lg"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/tvinh_z1604"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="premium-social-card w-12 h-12 rounded-[16px] flex items-center justify-center text-goldPrimary"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-white/5 max-w-[1280px] mx-auto px-6 py-6 text-center text-[11px] text-textSec"
+      >
+        &copy; 2026 Locket Gold By Tuong Vinh. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      // Cấu hình URL định sẵn khi người dùng ấn nút "Sao chép Module"
+      const MODULE_URL =
+        "https://raw.githubusercontent.com/ndh3108/locket-dns/main/locketgold.conf";
+
+      document.getElementById("copyBtn").addEventListener("click", function () {
+        // Sử dụng Clipboard API hiện đại để tự động sao chép đường dẫn
+        navigator.clipboard
+          .writeText(MODULE_URL)
+          .then(function () {
+            const btn = document.getElementById("copyBtn");
+            const btnText = document.getElementById("btnText");
+
+            // Tạo phản hồi trực quan: chuyển nút thành màu vàng, đổi chữ thành "Đã sao chép thành công!"
+            btnText.innerText = "Đã sao chép thành công!";
+            btn.classList.add("bg-goldPrimary", "text-black");
+            btn.classList.remove("text-goldPrimary", "border-goldPrimary/40");
+
+            // Sau 2 giây, khôi phục lại trạng thái ban đầu của nút
+            setTimeout(function () {
+              btnText.innerText = "Sao chép Module";
+              btn.classList.remove("bg-goldPrimary", "text-black");
+              btn.classList.add("text-goldPrimary", "border-goldPrimary/40");
+            }, 2000);
+          })
+          .catch(function (err) {
+            // Phương thức dự phòng (fallback) phòng trường hợp trình duyệt chặn quyền hoặc không hỗ trợ Clipboard API
+            const tempInput = document.createElement("input");
+            tempInput.value = MODULE_URL;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+              document.execCommand("copy");
+              const btn = document.getElementById("copyBtn");
+              const btnText = document.getElementById("btnText");
+              btnText.innerText = "Đã sao chép thành công!";
+              btn.classList.add("bg-goldPrimary", "text-black");
+              btn.classList.remove("text-goldPrimary", "border-goldPrimary/40");
+              setTimeout(function () {
+                btnText.innerText = "Sao chép Module";
+                btn.classList.remove("bg-goldPrimary", "text-black");
+                btn.classList.add("text-goldPrimary", "border-goldPrimary/40");
+              }, 2000);
+            } catch (e) {
+              alert(
+                "Không thể tự động sao chép. Vui lòng copy thủ công đường dẫn: " +
+                  MODULE_URL,
+              );
+            }
+            document.body.removeChild(tempInput);
+          });
+      });
+    </script>
+  </body>
+</html>
