@@ -1,80 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>PayloadDisplayName</key>
-    <string>🏆 Locket Gold By Tuong Vinh</string>
-    <key>PayloadDescription</key>
-    <string>✨ Services By Tuong Vinh&#10;&#10;🚀 Tính Năng Chính: Giữ Locket Gold&#10;&#10;🔰 Cam Kết:&#10;• 🍏 Hoạt Động Ổn Định Trên Máy&#10;• 🔋 Không Gây Hao Pin&#10;• ❄️ Không Gây Nóng Máy&#10;• 🌐 Không Cần Bật VPN Liên Tục&#10;• ⚡ Kết Nối Nhanh&#10;&#10;👨‍💻 Developed by Tuong Vinh Services&#10;💬 Contact for support if needed</string>
-    <key>PayloadIdentifier</key>
-    <string>com.tuongvinh.dns</string>
-    <key>PayloadScope</key>
-    <string>User</string>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>b8a9bf32-2b9d-400c-8b1a-26163f05468f</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-    <key>ConsentText</key>
-    <dict>
-      <key>default</key>
-      <string>❤️ Thay Mặt Tuong Vinh Services Cảm Ơn Bạn Vì Đã Sử Dụng Dịch Vụ 🤝</string>
-    </dict>
+<dict>
 
-    <key>PayloadContent</key>
-    <array>
-      <dict>
-        <key>DNSSettings</key>
-        <dict>
-          <key>DNSProtocol</key>
-          <string>HTTPS</string>
-          <key>ServerURL</key>
-          <string>https://apple.dns.nextdns.io/cd8d13/dhoai</string>
-        </dict>
-        
-        <key>OnDemandRules</key>
-        <array>
-          <dict>
-            <key>Action</key>
-            <string>EvaluateConnection</string>
-            <key>ActionParameters</key>
-            <array>
-              <dict>
-                <key>DomainAction</key>
-                <string>NeverConnect</string>
-                <key>Domains</key>
-                <array>
-                  <string>captive.apple.com</string>
-                  <string>3gppnetwork.org</string>
-                  <string>dav.orange.fr</string>
-                  <string>vvm.mobistar.be</string>
-                  <string>vvm.mstore.msg.t-mobile.com</string>
-                  <string>tma.vvm.mone.pan-net.eu</string>
-                  <string>vvm.ee.co.uk</string>
-                </array>
-              </dict>
-            </array>
-          </dict>
-          <dict>
-            <key>Action</key>
-            <string>Connect</string>
-          </dict>
-        </array>
-        
-        <key>PayloadType</key>
-        <string>com.apple.dnsSettings.managed</string>
-        <key>PayloadIdentifier</key>
-        <string>com.tuongvinh.dns.settings</string>
-        <key>PayloadUUID</key>
-        <string>c9b0cf43-3c0e-511d-9c2b-37274f16579e</string>
-        <key>PayloadDisplayName</key>
-        <string>🛡️ DNS Security Settings</string>
-        <key>PayloadOrganization</key>
-        <string>Tuong Vinh Services</string>
-        <key>PayloadVersion</key>
-        <integer>1</integer>
-      </dict>
-    </array>
-  </dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+
+				<key>ServerAddresses</key>
+				<array>
+					<string>45.90.28.0</string>
+					<string>45.90.30.0</string>
+					<string>2a07:a8c0::</string>
+					<string>2a07:a8c1::</string>
+				</array>
+
+				<key>ServerName</key>
+				<string>b7b673.dns.nextdns.io</string>
+
+				<key>ServerURL</key>
+				<string>https://dns.nextdns.io/b7b673</string>
+			</dict>
+
+			<key>OnDemandRules</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>WiFi</string>
+				</dict>
+
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>Cellular</string>
+				</dict>
+
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+				</dict>
+			</array>
+
+			<key>PayloadDescription</key>
+			<string>✨ Services By Tuong Vinh
+
+🚀 Tính Năng Chính: Giữ Locket Gold
+
+🔰 Cam Kết:
+• 🍏 Hoạt Động Ổn Định Trên Máy
+• 🔋 Không Gây Hao Pin
+• ❄️ Không Gây Nóng Máy
+• 🌐 Không Cần Bật VPN Liên Tục
+• ⚡ Kết Nối Nhanh
+
+👨‍💻 Developed by Tuong Vinh Services
+
+📱 CONTACTS
+📸 IG: @tvinh_z1604
+🎵 TikTok: @letuonggvinh
+💬 Zalo: 0346822534
+
+⭐ Tuong Vinh Services – Hỗ trợ nhanh chóng, uy tín và tận tâm</string>
+
+			<key>PayloadDisplayName</key>
+			<string>🏆 Locket Gold By Tuong Vinh</string>
+
+			<key>PayloadIdentifier</key>
+			<string>vn.danservices.dns.managed</string>
+
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+
+			<key>PayloadUUID</key>
+			<string>A8F3FF4B-54A9-4791-80D0-97C0C86D67E6</string>
+
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>ProhibitDisablement</key>
+			<false/>
+
+		</dict>
+	</array>
+
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>🤍 Locket Gold By Tuong Vinh Cảm Ơn Quý Khách 🤍</string>
+	</dict>
+
+	<key>PayloadDescription</key>
+	<string>✨ Services By Tuong Vinh
+
+🚀 Tính Năng Chính: Giữ Locket Gold
+
+🔰 Cam Kết:
+• 🍏 Hoạt Động Ổn Định Trên Máy
+• 🔋 Không Gây Hao Pin
+• ❄️ Không Gây Nóng Máy
+• 🌐 Không Cần Bật VPN Liên Tục
+• ⚡ Kết Nối Nhanh
+
+👨‍💻 Developed by Tuong Vinh Services
+
+📱 CONTACTS
+📸 IG: @tvinh_z1604
+🎵 TikTok: @letuonggvinh
+💬 Zalo: 0346822534
+
+⭐ Tuong Vinh Services – Hỗ trợ nhanh chóng, uy tín và tận tâm</string>
+
+	<key>PayloadDisplayName</key>
+	<string>🏆 Locket Gold By Tuong Vinh</string>
+
+	<key>PayloadIdentifier</key>
+	<string>vn.danservices.dns.profile</string>
+
+	<key>PayloadOrganization</key>
+	<string>Tuong Vinh Services</string>
+
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+
+	<key>PayloadType</key>
+	<string>Configuration</string>
+
+	<key>PayloadUUID</key>
+	<string>2B6AC73F-1A44-43CF-A951-95F6B3CEB7BE</string>
+
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+
+</dict>
 </plist>
